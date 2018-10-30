@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <title>Title</title>
+
 </head>
+
 <body>
 <h1>Personal information</h1>
 <form id="ajax-form" method="post">
@@ -39,7 +42,9 @@
     <legend>Registration</legend>
     <div class="email">
       <label for="email"> E-mail
-        <input type="email" name="email" id="email" placeholder="email@example.com"/><br><br>
+        <input type="email" name="email" id="email" placeholder="email@example.com"/>
+        <br>
+        <br>
       </label>
     </div>
     <div>
@@ -55,31 +60,42 @@
         <input type="radio" name="cats" id="cats" value="yes"/> Yes <br>
       </label>
       <label for="cats2">
-        <input type="radio" name="cats" id="cats2" value="no"/> No <br> <br>
+        <input type="radio" name="cats" id="cats2" value="no"/> No
+        <br>
+        <br>
       </label>
     </div>
     <div>
       <label for="color"> What is your favorite color? <br>
-        <input type="color" name="color" id="color"/><br><br>
+        <input type="color" name="color" id="color"/>
+        <br>
+        <br>
       </label>
     </div>
     <div>
       <label for="time"> What time do you go bed? <br>
-        <input type="time" name="time" id="time" step="1"/> <br> <br>
+        <input type="time" name="time" id="time" step="1"/>
+        <br>
+        <br>
       </label>
     </div>
     <div>
-      <label for="cars"> What your favorite brand of cars? <br>
+      <label for="cars"> What your favorite brand of cars?
+        <br>
         <select multiple name="cars" id="cars">
           <option value="bmw">BMW</option>
           <option value="audi">Audi</option>
           <option value="lada">Lada</option>
-        </select> <br><br>
+        </select>
+        <br>
+        <br>
       </label>
     </div>
     <div>
-      <label for="rate"> How do you rate our work? <br>
-        <input type="range" name="rate" id="rate" min="0" max="10" step="1" value="0"/> <br>
+      <label for="rate"> How do you rate our work?
+        <br>
+        <input type="range" name="rate" id="rate" min="0" max="10" step="1" value="0"/>
+        <br>
       </label>
     </div>
   </fieldset>
@@ -90,5 +106,9 @@
   <button type="submit" id="btn">Submit</button>
 </form>
 </body>
-<script src="ajax.js"></script>
+
+<footer>
+  <script src="ajax.js"></script>
+</footer>
+
 </html>
