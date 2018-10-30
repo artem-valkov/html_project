@@ -5,6 +5,63 @@
     <title>Title</title>
 </head>
 <body>
-
+<h1>Personal information</h1>
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+<fieldset>
+    <legend>Personal information</legend>
+    <label for="pers_inf"> Surname:
+        <input type="text" id="pers_inf" name="pers_inf"><br><br>
+    </label>
+    <label for="name"> Name:
+        <input type="text" name="name" id="name"><br><br>
+    </label>
+    <label for="age"> How old are You?:
+        <input type="text" name="age" id="age" size="2"><br><br>
+    </label>
+    <label for="birthday"> Full date of birthday:
+        <input type="date" name="birthday" id="birthday"><br><br>
+    </label>
+    <label for="agreement">I accept the term of the agreement
+        <input type="checkbox" name="agreement" id="agreement">
+    </label>
+</fieldset>
+<fieldset>
+    <legend>Registration</legend>
+    <label for="email"> E-mail
+        <input type="email" name="email" id="email"><br><br>
+    </label>
+    <label for="password"> Password
+        <input type="password" name="password" id="password">
+    </label>
+</fieldset>
+<fieldset>
+    <legend>An interest fact about you!</legend>
+    <label for="cats"> Do you love cats? <br>
+        <input type="radio" id="choiceYes" name="cats" id="cats" value="yes"> Yes <br>
+        <input type="radio" id="choiceNo" name="cats" id="cats" value="no"> No <br>
+    </label>
+    <label for="color"> What is your favorite color? <br>
+        <input type="color" name="color" id="color"><br>
+    </label>
+    <label for="time"> What time do you go bed? <br>
+        <input type="time" name="time" id="time"> <br>
+    </label>
+    <label for="cars"> What your favorite brand of cars? <br>
+        <select multiple name="cars" id="cars">
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+        </select> <br>
+    </label>
+    <label for="rate"> How do you rate our work? <br>
+        <input type="range" min="0" max="10" step="1" value="0" name="rate" id="rate"> <br>
+    </label>
+</fieldset>
+<fieldset>
+    <legend>Your comments:</legend>
+    <textarea placeholder="Comments"></textarea>
+</fieldset>
+    <button type="submit" formaction="">Submit</button>
+</form>
 </body>
 </html>
