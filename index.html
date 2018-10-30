@@ -6,11 +6,11 @@
 </head>
 <body>
 <h1>Personal information</h1>
-<form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
 <fieldset>
     <legend>Personal information</legend>
-    <label for="pers_inf"> Surname:
-        <input type="text" id="pers_inf" name="pers_inf"><br><br>
+    <label for="pers_info"> Surname:
+        <input type="text" id="pers_inf" name="pers_info"><br><br>
     </label>
     <label for="name"> Name:
         <input type="text" name="name" id="name"><br><br>
@@ -28,7 +28,7 @@
 <fieldset>
     <legend>Registration</legend>
     <label for="email"> E-mail
-        <input type="email" name="email" id="email"><br><br>
+        <input type="email" name="email" id="email" placeholder="email@example.com"><br><br>
     </label>
     <label for="password"> Password
         <input type="password" name="password" id="password">
@@ -37,8 +37,10 @@
 <fieldset>
     <legend>An interest fact about you!</legend>
     <label for="cats"> Do you love cats? <br>
-        <input type="radio" id="choiceYes" name="cats" id="cats" value="yes"> Yes <br>
-        <input type="radio" id="choiceNo" name="cats" id="cats" value="no"> No <br>
+        <input type="radio" id="cats" name="cats"  value="yes"> Yes <br>
+    </label>
+    <label for="cats2">
+        <input type="radio" id="cats2" name="cats"  value="no"> No <br>
     </label>
     <label for="color"> What is your favorite color? <br>
         <input type="color" name="color" id="color"><br>
